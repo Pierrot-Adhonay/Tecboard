@@ -1,0 +1,113 @@
+/* RESET PADRÃO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adicionado para facilitar o controle de padding/width */
+}
+
+/* ESTILOS GERAIS DA PÁGINA */
+body {
+    background-color: #0E1014;
+    color: white;
+    /* Usando padding para o recuo interno em vez de margens no body */
+}
+header img{
+    display: block;
+    padding: 22px 20px; 
+}
+/* TÍTULO PRINCIPAL */
+h1 {
+    font-size: 68px;
+    color: white;
+    font-family: "Unbounded", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    /* Margem inferior para afastar do parágrafo */
+    margin-bottom: 20px; 
+}
+
+/* DESTAQUE DA COR ROXA NO TÍTULO */
+span {
+    color: #9747FF;
+    line-height: normal;
+    /* text-align: center; é desnecessário em span se estiver dentro de um h1 centralizado */
+}
+
+/* PARÁGRAFO */
+p {
+    color: white;
+    font-family: "poppins";
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    /* Adicionando margem inferior para afastar do botão */
+    margin-bottom: 20px; 
+}
+
+/* BOTÃO (LINK) */
+a {
+    color: white;
+    font-family: "unbounded";
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #9747FF;
+    
+    /* Configurações de dimensão e display */
+    width: 260px; /* Largura definida para poder centralizar */
+    height: 55px;
+    display: block; /* Essencial para que margin: auto funcione e ocupe sua própria linha */
+    
+    /* Centralização horizontal do texto e do próprio elemento */
+    text-align: center; /* Centraliza o texto dentro do link */
+    line-height: 55px; /* Centraliza o texto verticalmente dentro do link */
+    
+    border-radius: 55px;
+    
+    /* 🔑 CORREÇÃO CRÍTICA: Centraliza o elemento de bloco com largura definida */
+    margin: 0 auto; 
+    /* Esta linha faz o trabalho: 0 para margem superior/inferior, auto para margem esquerda/direita */
+
+}
+a:hover{
+    background-color:#8233E8 ;
+}
+
+section img {
+        display: block;
+        width: 792px;
+        height: 446px;
+        margin:0 auto;
+    }
+    @media(max-width: 768px){
+    
+header img{
+    margin: 65px 0 0 60px;
+}
+p{
+    width: 648px;
+}
+
+}
+@media(max-width: 375px){
+
+header img{
+    margin: 32px 0 0 16px;
+}
+h1{
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+    width: 340px;
+}
+a{
+    width: 251px;
+    height: 66px;
+    font-size: 20px;
+}
+section img{
+    width: 341px;
+    height: 230px;
+}
+}
