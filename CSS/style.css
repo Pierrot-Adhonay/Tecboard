@@ -2,14 +2,21 @@
 * {
     margin: 0;
     padding: 0;
+feat/aumenta-font-do-titulo
     box-sizing: border-box; 
+
+    box-sizing: border-box;
+main
 }
 
 /* ESTILOS GERAIS DA PÁGINA */
 body {
     background-color: #0E1014;
     color: white;
+ feat/aumenta-font-do-titulo
 
+
+main
 }
 header img{
     display: block;
@@ -58,15 +65,20 @@ a {
     height: 55px;
     display: block; 
     
-    /* Centralização horizontal do texto e do próprio elemento */
+ 
     text-align: center; /* Centraliza o texto dentro do link */
     line-height: 55px; /* Centraliza o texto verticalmente dentro do link */
     
     border-radius: 55px;
     
+feat/aumenta-font-do-titulo
   
     margin: 0 auto; 
    
+
+    margin: 0 auto; 
+
+ main
 
 }
 a:hover{
