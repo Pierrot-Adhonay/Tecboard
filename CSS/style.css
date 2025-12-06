@@ -2,14 +2,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Adicionado para facilitar o controle de padding/width */
+    box-sizing: border-box; 
 }
 
 /* ESTILOS GERAIS DA PÁGINA */
 body {
     background-color: #0E1014;
     color: white;
-    /* Usando padding para o recuo interno em vez de margens no body */
+
 }
 header img{
     display: block;
@@ -17,7 +17,7 @@ header img{
 }
 /* TÍTULO PRINCIPAL */
 h1 {
-    font-size: 68px;
+    font-size: 80px;
     color: white;
     font-family: "Unbounded", sans-serif;
     font-weight: bold;
@@ -31,7 +31,7 @@ h1 {
 span {
     color: #9747FF;
     line-height: normal;
-    /* text-align: center; é desnecessário em span se estiver dentro de um h1 centralizado */
+
 }
 
 /* PARÁGRAFO */
@@ -56,7 +56,7 @@ a {
     /* Configurações de dimensão e display */
     width: 260px; /* Largura definida para poder centralizar */
     height: 55px;
-    display: block; /* Essencial para que margin: auto funcione e ocupe sua própria linha */
+    display: block; 
     
     /* Centralização horizontal do texto e do próprio elemento */
     text-align: center; /* Centraliza o texto dentro do link */
@@ -64,9 +64,9 @@ a {
     
     border-radius: 55px;
     
-    /* 🔑 CORREÇÃO CRÍTICA: Centraliza o elemento de bloco com largura definida */
+  
     margin: 0 auto; 
-    /* Esta linha faz o trabalho: 0 para margem superior/inferior, auto para margem esquerda/direita */
+   
 
 }
 a:hover{
