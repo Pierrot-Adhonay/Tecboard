@@ -62,11 +62,8 @@ a {
     text-align: center; /* Centraliza o texto dentro do link */
     line-height: 55px; /* Centraliza o texto verticalmente dentro do link */
     
-    border-radius: 55px;
-    
-  
+    border-radius: 55px;    
     margin: 0 auto; 
-   
 
 }
 a:hover{
