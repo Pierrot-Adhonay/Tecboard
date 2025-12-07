@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* Manter apenas uma vez para evitar repetição */
     box-sizing: border-box; 
 }
 
@@ -9,16 +10,18 @@
 body {
     background-color: #0E1014;
     color: white;
-
 }
+
 header img{
     display: block;
     padding: 22px 20px; 
 }
+
 /* TÍTULO PRINCIPAL */
 h1 {
     font-size: 80px;
     color: white;
+    /* Lembre-se de importar a fonte "Unbounded" */
     font-family: "Unbounded", sans-serif;
     font-weight: bold;
     text-align: center;
@@ -31,12 +34,12 @@ h1 {
 span {
     color: #9747FF;
     line-height: normal;
-
 }
 
 /* PARÁGRAFO */
 p {
     color: white;
+    /* Lembre-se de importar a fonte "poppins" */
     font-family: "poppins";
     font-size: 25px;
     font-weight: 500;
@@ -58,53 +61,65 @@ a {
     height: 55px;
     display: block; 
     
-    /* Centralização horizontal do texto e do próprio elemento */
     text-align: center; /* Centraliza o texto dentro do link */
     line-height: 55px; /* Centraliza o texto verticalmente dentro do link */
     
-    border-radius: 55px;    
+    border-radius: 55px;
+    
+    /* Centralização horizontal do bloco */
     margin: 0 auto; 
-
 }
+
 a:hover{
     background-color:#8233E8 ;
 }
 
 section img {
-        display: block;
-        width: 792px;
-        height: 446px;
-        margin:0 auto;
-    }
-    @media(max-width: 768px){
-    
-header img{
-    margin: 65px 0 0 60px;
-}
-p{
-    width: 648px;
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin:0 auto;
 }
 
+/* --- MEDIA QUERIES --- */
+
+/* Tablet (max-width: 768px) */
+@media(max-width: 768px){
+    
+    header img{
+        margin: 65px 0 0 60px;
+    }
+
+    p{
+        /* Atenção: Se o texto for menor que 648px, o alinhamento central pode parecer estranho */
+        width: 648px;
+    }
 }
+
+/* Mobile (max-width: 375px) */
 @media(max-width: 375px){
 
-header img{
-    margin: 32px 0 0 16px;
-}
-h1{
-    font-size: 40px;
-}
-p{
-    font-size: 20px;
-    width: 340px;
-}
-a{
-    width: 251px;
-    height: 66px;
-    font-size: 20px;
-}
-section img{
-    width: 341px;
-    height: 230px;
-}
+    header img{
+        margin: 32px 0 0 16px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 20px;
+        width: 340px;
+    }
+
+    a{
+        width: 251px;
+        height: 66px;
+        font-size: 20px;
+    }
+
+    section img{
+        width: 341px;
+        height: 230px;
+    }
 }
